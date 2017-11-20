@@ -22,5 +22,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'require_all'
   s.add_runtime_dependency 'mail'
 
-  s.executables = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  s.executables = [ "vpsadmind", "vpsadmind-save-transfers", "vpsadmind-vps-console" ]
 end

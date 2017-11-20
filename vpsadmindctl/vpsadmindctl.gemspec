@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'json'
   s.add_runtime_dependency 'pry-remote'
 
-  s.executables = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  s.executables = [ "vpsadmindctl" ]
 end
