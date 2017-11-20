@@ -21,4 +21,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'pry-remote'
   s.add_runtime_dependency 'require_all'
   s.add_runtime_dependency 'mail'
+
+  s.executables = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
 end
